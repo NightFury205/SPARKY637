@@ -1,1 +1,1 @@
-worker: python Sparky.py
+worker: python SPARKYbot.py
