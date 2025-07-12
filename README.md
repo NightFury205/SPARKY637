@@ -99,9 +99,3 @@ Sparky/
 
 This bot is built for personal and educational use.  
 If you plan to host it publicly or contribute, please give credit to the original author.
-
-> 🧠 Made with ❤️ by [NightFury205](https://github.com/NightFury205)
-
-```
-
----
