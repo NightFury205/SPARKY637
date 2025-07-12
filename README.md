@@ -1,31 +1,31 @@
 # ⚡ Sparky - Discord Bot
 
 **Sparky** is a powerful, multipurpose Discord bot written in Python using `discord.py`.  
-It includes moderation tools, a fully functional custom economy system, a virtual shop, per-server custom prefixes, anti-link filters, and more — all designed to enhance any Discord community.
+It includes moderation tools, a fully functional custom economy system, a virtual shop, per-server custom prefixes, anti-link filters, and more- all designed to enhance any Discord community.
 
 ---
 
 ## 📦 Features
 
 ### 🔧 Admin Tools
-- `*changeprefix` — Customize the bot prefix per server
-- `*clear` — Bulk delete messages
-- `*kick`, `*ban`, `*unban` — Basic moderation commands
-- `*whois` — User info lookup with embedded stats
+- `*changeprefix` Customize the bot prefix per server
+- `*clear` Bulk delete messages
+- `*kick`, `*ban`, `*unban` Basic moderation commands
+- `*whois` User info lookup with embedded stats
 
 ### 💰 Economy System
-- `*balance` — Check wallet and bank balances
-- `*beg` — Random coin generator
-- `*deposit`, `*withdraw` — Transfer between wallet and bank
-- `*give` — Transfer coins to another user
-- `*rob` — Rob coins from another member
-- `*slots` — Fun slot machine minigame
-- `*shop`, `*buy`, `*sell` — Virtual shop with item trading
-- `*bag` — View inventory
-- `*leaderboard` — Global server ranking based on total wealth
+- `*balance` Check wallet and bank balances
+- `*beg` Random coin generator
+- `*deposit`, `*withdraw` Transfer between wallet and bank
+- `*give` Transfer coins to another user
+- `*rob` Rob coins from another member
+- `*slots` Fun slot machine minigame
+- `*shop`, `*buy`, `*sell` Virtual shop with item trading
+- `*bag` View inventory
+- `*leaderboard` Global server ranking based on total wealth
 
 ### 🛠️ Utility & Fun
-- `*poll` — Quick polls with reaction-based voting
+- `*poll` Quick polls with reaction-based voting
 - Emoji preview: Use `:emoji_name:` to trigger emoji previews
 - Automatic **anti-link protection** (blocks messages containing invite links)
 
@@ -76,22 +76,11 @@ Sparky/
 
 ---
 
-## 🧠 Notes
-
-- User data is saved in `mainbank.json` (wallet, bank, inventory).
-- Server-specific prefixes are stored in `prefixes.json`.
-- `discord.py` is used as the core library — install via pip if not already present.
-- Written as a single file for simplicity; can be modularized for large-scale use.
-
----
-
-## 🌟 Planned Features / Ideas
-
-- Music playback support (via voice channels)
-- Daily & weekly reward system
-- Inventory upgrades and XP leveling
-- Role-based item effects (e.g. VIP access via purchase)
-- Command modularization for cleaner architecture
+> [!NOTE]
+> - User data is saved in `mainbank.json` (wallet, bank, inventory). <br>
+> - Server-specific prefixes are stored in `prefixes.json`.<br>
+> - `discord.py` is used as the core library — install via pip if not already present.<br>
+> - Written as a single file for simplicity; can be modularized for large-scale use.<br>
 
 ---
 
