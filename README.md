@@ -31,17 +31,49 @@ Sparky is a feature-rich, multipurpose Discord bot written in Python using `disc
 ---
 
 ## 📁 Project Structure
-Sparky/
-> │
+Sparky/ <br>
+│ <br>
+├── Sparky.py # Main bot code <br>
+├── mainbank.json # Stores user economy data <br>
+├── prefixes.json # Stores custom prefixes per guild <br>
+├── requirements.txt # Python dependencies <br>
+├── Procfile # For Heroku or similar deployment <br>
+└── README.md # This file! <br>
 
-> ├── Sparky.py # Main bot code
 
-> ├── mainbank.json # Stores user economy data
+---
 
-> ├── prefixes.json # Stores custom prefixes per guild
+## 🚀 Setup
 
-> ├── requirements.txt # Python dependencies
+1. **Clone the repo:**
+  ```bash
+  git clone https://github.com/NightFury205/Sparky.git
+  cd Sparky
+  ```
+3. Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
+3. Add your bot token: <br>
+Replace "TOKEN" in the last line of Sparky.py with your actual bot token:
+  ```bash
+  client.run("YOUR_BOT_TOKEN")
+  ```
+4. Run the bot:
+  ```bash
+  python Sparky.py
+  ```
 
-> ├── Procfile # For Heroku or similar deployment
+---
 
-> └── README.md # This file!
+## 🧠 Notes
+1. All user-related data is stored in mainbank.json.
+2. Server prefixes are stored in prefixes.json.
+3. Supports dynamic reactions and anti-spam/anti-link measures.
+4. Code is structured in a single Python file for easy understanding.
+
+---
+
+## 📜 License
+
+This bot is made for personal and educational use. If you plan to redistribute or host it publicly, please give proper credit.
