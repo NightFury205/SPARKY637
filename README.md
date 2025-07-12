@@ -1,79 +1,107 @@
 # ⚡ Sparky - Discord Bot
 
-Sparky is a feature-rich, multipurpose Discord bot written in Python using `discord.py`. It includes moderation tools, a custom economy system, a dynamic shop, server-specific prefixes, anti-link filters, and more—all designed to enhance your Discord server.
+**Sparky** is a powerful, multipurpose Discord bot written in Python using `discord.py`.  
+It includes moderation tools, a fully functional custom economy system, a virtual shop, per-server custom prefixes, anti-link filters, and more — all designed to enhance any Discord community.
 
 ---
 
 ## 📦 Features
 
-### ⚙️ Admin Tools
-- `*changeprefix` – Set a custom prefix for your server
-- `*clear` – Bulk delete messages
-- `*kick` / `*ban` / `*unban` – Member moderation
-- `*whois` – Get detailed info about a member
+### 🔧 Admin Tools
+- `*changeprefix` — Customize the bot prefix per server
+- `*clear` — Bulk delete messages
+- `*kick`, `*ban`, `*unban` — Basic moderation commands
+- `*whois` — User info lookup with embedded stats
 
 ### 💰 Economy System
-- `*balance` – Check your wallet and bank
-- `*beg` – Earn free coins randomly
-- `*deposit` / `*withdraw` – Manage funds
-- `*give` – Transfer coins to others
-- `*slots` – Try your luck with a slot machine
-- `*rob` – Steal coins from others
-- `*shop` / `*buy` / `*sell` – Custom items marketplace
-- `*bag` – Check your inventory
-- `*leaderboard` – View top richest users
+- `*balance` — Check wallet and bank balances
+- `*beg` — Random coin generator
+- `*deposit`, `*withdraw` — Transfer between wallet and bank
+- `*give` — Transfer coins to another user
+- `*rob` — Rob coins from another member
+- `*slots` — Fun slot machine minigame
+- `*shop`, `*buy`, `*sell` — Virtual shop with item trading
+- `*bag` — View inventory
+- `*leaderboard` — Global server ranking based on total wealth
 
-### 📊 Utility
-- `*poll` – Create simple 2-option polls
-- Anti-link protection (deletes messages with links)
-- Emoji preview using `:emoji:` formatting
+### 🛠️ Utility & Fun
+- `*poll` — Quick polls with reaction-based voting
+- Emoji preview: Use `:emoji_name:` to trigger emoji previews
+- Automatic **anti-link protection** (blocks messages containing invite links)
 
 ---
 
 ## 📁 Project Structure
-Sparky/ <br>
-│ <br>
-├── Sparky.py # Main bot code <br>
-├── mainbank.json # Stores user economy data <br>
-├── prefixes.json # Stores custom prefixes per guild <br>
-├── requirements.txt # Python dependencies <br>
-├── Procfile # For Heroku or similar deployment <br>
-└── README.md # This file! <br>
 
+```
+Sparky/
+├── Sparky.py           # Main bot code
+├── mainbank.json       # Economy database
+├── prefixes.json       # Server-specific prefix settings
+├── requirements.txt    # Python dependencies
+├── Procfile            # Deployment config (e.g. for Heroku)
+└── README.md           # This file
+```
 
 ---
 
-## 🚀 Setup
+## 🚀 Setup & Installation
 
-1. **Clone the repo:**
-  ```bash
-  git clone https://github.com/NightFury205/Sparky.git
-  cd Sparky
-  ```
-3. Install dependencies:
-  ```bash
-  pip install -r requirements.txt
-  ```
-3. Add your bot token: <br>
-Replace "TOKEN" in the last line of Sparky.py with your actual bot token:
-  ```bash
-  client.run("YOUR_BOT_TOKEN")
-  ```
-4. Run the bot:
-  ```bash
-  python Sparky.py
-  ```
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/NightFury205/Sparky.git
+   cd Sparky
+   ```
+
+2. **Install required packages:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set your bot token:**
+
+   Open `Sparky.py` and replace the last line with your actual bot token:
+
+   ```python
+   client.run("YOUR_BOT_TOKEN")
+   ```
+
+4. **Run the bot:**
+
+   ```bash
+   python Sparky.py
+   ```
 
 ---
 
 ## 🧠 Notes
-1. All user-related data is stored in mainbank.json.
-2. Server prefixes are stored in prefixes.json.
-3. Supports dynamic reactions and anti-spam/anti-link measures.
-4. Code is structured in a single Python file for easy understanding.
+
+- User data is saved in `mainbank.json` (wallet, bank, inventory).
+- Server-specific prefixes are stored in `prefixes.json`.
+- `discord.py` is used as the core library — install via pip if not already present.
+- Written as a single file for simplicity; can be modularized for large-scale use.
+
+---
+
+## 🌟 Planned Features / Ideas
+
+- Music playback support (via voice channels)
+- Daily & weekly reward system
+- Inventory upgrades and XP leveling
+- Role-based item effects (e.g. VIP access via purchase)
+- Command modularization for cleaner architecture
 
 ---
 
 ## 📜 License
 
-This bot is made for personal and educational use. If you plan to redistribute or host it publicly, please give proper credit.
+This bot is built for personal and educational use.  
+If you plan to host it publicly or contribute, please give credit to the original author.
+
+> 🧠 Made with ❤️ by [NightFury205](https://github.com/NightFury205)
+
+```
+
+---
